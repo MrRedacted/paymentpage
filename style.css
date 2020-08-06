@@ -176,7 +176,7 @@ label.required::after {
   text-align: center;
   background-color: rgb(230, 230, 230);
   font-size: 2em;
-  display: block;
+  display: none;
 }
 
 .rcpt-title {
