@@ -1,0 +1,212 @@
+:root {
+  font-size: 10px;
+  color: black;
+  font-family: 'Poppins', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+/* Header */
+
+.head-images {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+header {
+  background: whitesmoke;
+  padding: 0.2rem;
+  font-size: 1.7rem;
+  text-align: center;
+}
+
+#title {
+  font-weight: bold;
+}
+
+.log-in-link {
+  color: blue;
+  text-decoration: none;
+}
+
+/* Form */
+
+#main {
+  margin: 2.75rem auto 2.75rem auto;
+  max-width: 90%;
+  line-height: 1.5;
+  letter-spacing: .04rem;
+}
+
+.sub-text {
+  padding: 0 2.7rem;
+}
+
+.form-title {
+  font-weight: bold;
+}
+
+label {
+  display: block;
+  margin-bottom: .5rem;
+}
+
+#payment-form {
+  background: whitesmoke;
+  padding: 2.7rem;
+  font-size: 2rem;
+}
+
+.note {
+  font-size: 1.25rem;
+  color: rgba(0, 0, 0, 0.7)
+}
+
+.entry-section {
+  margin: 0 auto 2.5rem auto;
+}
+
+.entry.order-invoice {
+  width: 7rem;
+}
+
+.entry.email {
+  width: 40%
+} 
+
+.entry.amount, .entry.card-number {
+  width: 25%;
+}
+
+.new-card>.entry-section {
+  padding-left: 3rem;
+}
+
+.entry.date {
+  width: 5%;
+}
+
+.entry.cvv {
+  width: 7%;
+}
+
+.entry.cardholder {
+  width: 40%;
+}
+
+#creditCard {
+  position: absolute;
+  margin-left: 1rem;
+}
+
+.entry {
+  color: black;
+  width: 100%;
+  height: 3.3rem;
+  border-radius: .4rem;
+  padding: .5rem .6rem;
+  font-size: 1.7rem;
+  font-weight: normal;
+  border: .14rem solid rgb(122, 122, 122);
+  transition: border-color .2s ease-in-out, box-shadow .2s ease-in-out;
+}
+
+label.required::after {
+  content: "*";
+  color: red;
+}
+
+.submit-button {
+  width: 12%;
+  margin: 0 auto;
+  display: block;
+  padding: 1.3rem;
+  background-color: red;
+  border: none;
+  color: white;
+  border-radius: .5rem;
+  font-size: 1.8rem;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+/* Misc. styling code */
+
+.entry:focus {
+  border-color: rgb(201, 0, 0);
+  box-shadow: 0 0 0 .1rem rgb(201,0,0);
+  outline: none;
+}
+
+.entry:hover {
+  border-color: rgb(201, 0, 0);
+}
+
+/* Receipt */
+
+#receipt {
+  border-radius: .2rem;
+  color: black;
+  height: 50vh;
+  width: 30vw;
+  position: fixed;
+  top: 25vh;
+  left: 35vw;
+  z-index: 100;
+  text-align: center;
+  background-color: rgb(230, 230, 230);
+  font-size: 2em;
+  display: none;
+}
+
+.rcpt-title {
+  margin-top: 1rem;
+  text-decoration: underline;
+  font-size: 3rem;
+}
+
+.rcpt-item {
+  margin: 5rem auto;
+  width: 100%;
+}
+
+button.rcpt-item {
+  margin: 0;
+  position: absolute;
+  font-weight: bold;
+  font-size: 1.3rem;
+  width: 20%;
+  left: 40%;
+  bottom: 1rem;
+  background-color: white;
+  display: block;
+  padding: .8rem;
+  border: none;
+  color: black;
+  border-radius: .5rem;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+  #receipt {
+    width: 60vw;
+    left: 20vw;
+  }
+}
