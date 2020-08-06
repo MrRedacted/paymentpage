@@ -26,7 +26,6 @@ function cardTypeCheck() {  //Checks for the type of card and applies appropriat
     } else {
         cardImg.src = "https://www.texvisions.com/design_tool/data/test_logos/blank_card.png"
     };
-    console.log('test');
 };
 
 function displayReceipt() { //Displays the receipt with information from the submitted form

@@ -45,6 +45,10 @@ header {
   text-decoration: none;
 }
 
+.head-images img {
+  width: 12.7rem;
+}
+
 /* Form */
 
 #main {
@@ -83,15 +87,15 @@ label {
 }
 
 .entry.order-invoice {
-  width: 7rem;
+  width: 6rem;
 }
 
 .entry.email {
-  width: 40%
+  width: 30rem;
 } 
 
 .entry.amount, .entry.card-number {
-  width: 25%;
+  width: 21rem;
 }
 
 .new-card>.entry-section {
@@ -99,15 +103,15 @@ label {
 }
 
 .entry.date {
-  width: 5%;
+  width: 4rem;
 }
 
 .entry.cvv {
-  width: 7%;
+  width: 6rem;
 }
 
 .entry.cardholder {
-  width: 40%;
+  width: 30rem;
 }
 
 #creditCard {
@@ -133,7 +137,7 @@ label.required::after {
 }
 
 .submit-button {
-  width: 12%;
+  width: 10rem;
   margin: 0 auto;
   display: block;
   padding: 1.3rem;
@@ -208,5 +212,8 @@ button.rcpt-item {
   #receipt {
     width: 60vw;
     left: 20vw;
+  }
+  .head-images img {
+    width: 9.53rem;
   }
 }
