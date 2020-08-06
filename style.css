@@ -176,7 +176,7 @@ label.required::after {
   text-align: center;
   background-color: rgb(230, 230, 230);
   font-size: 2em;
-  display: none;
+  display: block;
 }
 
 .rcpt-title {
@@ -215,5 +215,22 @@ button.rcpt-item {
   }
   .head-images img {
     width: 9.53rem;
+  }
+}
+
+@media (max-width: 800px) {
+  #receipt {
+    height: 90vh;
+    top: 5vh;
+  }
+  button.rcpt-item {
+    width: 30%;
+    left: 35%;
+  }
+  .head-images img {
+    width: 7rem;
+  }
+  .new-card>.entry-section {
+    padding-left: 0;
   }
 }
